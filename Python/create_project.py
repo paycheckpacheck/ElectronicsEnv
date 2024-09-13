@@ -10,7 +10,7 @@ def create_project_structure(project_name, *args):
     parent_dir = os.path.abspath(os.path.join(current_dir, os.pardir))
 
     # Define the base folder names
-    base_folders = ["MATLAB", "LTSpice", "KiCAD", "EasyEDA", "Python", "Arduino"]
+    base_folders = ["MATLAB", "LTSpice", "KiCAD", "EasyEDA", "Python", "Arduino", "Datasheets"]
 
     # Create the main project directory outside the current folder
     project_path = os.path.join(parent_dir, project_name)
