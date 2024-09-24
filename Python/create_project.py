@@ -33,8 +33,9 @@ def create_project(name):
 
     # Create each directory inside the project and copy default contents if applicable
     for folder, source_path in default_folders.items():
-        folder_path = os.path.join(project_path, folder)
+        folder_path = os.path.join(project_path, folder, "libraries")
         os.makedirs(folder_path, exist_ok=True)
+        print(folder)
 
         # Check if the folder has default content to be copied
         if source_path:
